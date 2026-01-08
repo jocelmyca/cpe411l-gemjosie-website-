@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Precious Gem Marmol</title>
 
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
     <style>
@@ -15,6 +16,7 @@
             color: #333;
         }
 
+        /* HEADER */
         header {
             display: flex;
             align-items: center;
@@ -56,13 +58,20 @@
             transition: 0.3s;
         }
 
-        nav ul li a:hover,
+        nav ul li a:hover {
+            background: linear-gradient(135deg, #ffffff, #f4e9ff);
+            box-shadow: 0 0 10px #B986F0;
+            color: #B986F0;
+        }
+
+        /* ADDED ACTIVE STATE */
         nav ul li a.active {
             background: linear-gradient(135deg, #ffffff, #f4e9ff);
             box-shadow: 0 0 10px #B986F0;
             color: #B986F0;
         }
 
+        /* SECTION STYLING */
         .section {
             display: flex;
             align-items: center;
@@ -75,20 +84,21 @@
             width: 45%;
         }
 
-        h2 {
+        .section-left h2, .section-right h2 {
             font-family: "Playfair Display", serif;
             font-size: 32px;
             margin-bottom: 15px;
             color: #000000;
             transition: color 0.3s;
+        }
+
+        .section-left h2:hover,
+        .section-right h2:hover {
+            color: #B986F0;
             cursor: pointer;
         }
 
-        h2:hover {
-            color: #B986F0;
-        }
-
-        p {
+        .section-left p, .section-right p {
             font-size: 18px;
             line-height: 1.6;
             color: #555;
@@ -107,7 +117,7 @@
         }
 
         .reverse {
-            flex-direction: row-reverse;
+            flex-direction: row;
         }
 
         @media (max-width: 900px) {
@@ -126,6 +136,7 @@
 
 <body>
 
+    <!-- HEADER -->
     <header>
         <div class="logo">Thombits</div>
         <nav>
@@ -138,19 +149,21 @@
         </nav>
     </header>
 
+    <!-- FIRST SECTION -->
     <section class="section">
         <div class="section-left">
             <h2>Precious Gem Marmol</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ligula id metus venenatis feugiat. Suspendisse potenti.</p>
         </div>
         <div class="section-right">
-            <img src="C:\Users\MYRA\Documents\web eng\pg.jpeg" alt="Precious Gem M. Marmol">
+            <img src="images/pg.jpeg" alt="Precious Gem M. Marmol">
         </div>
     </section>
 
+    <!-- SECOND SECTION -->
     <section class="section reverse">
         <div class="section-left">
-            <img src="C:\Users\MYRA\Downloads\josie.jpg">
+            <img src="images/josie.jpg">
         </div>
         <div class="section-right">
             <h2>Jocel Myca C. Ramos</h2>

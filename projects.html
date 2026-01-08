@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Thombits</title>
 
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
     <style>
@@ -15,6 +16,7 @@
             color: #333;
         }
 
+        /* HEADER */
         header {
             display: flex;
             align-items: center;
@@ -55,13 +57,20 @@
             transition: 0.3s;
         }
 
-        nav ul li a:hover,
+        nav ul li a:hover {
+            background: linear-gradient(135deg, #ffffff, #f4e9ff);
+            box-shadow: 0 0 10px #B986F0;
+            color: #B986F0;
+        }
+
+        /* ACTIVE (highlighted) */
         nav ul li a.active {
             background: linear-gradient(135deg, #ffffff, #f4e9ff);
             box-shadow: 0 0 10px #B986F0;
             color: #B986F0;
         }
 
+        /* PROJECTS GRID */
         .projects-container {
             width: 90%;
             margin: 50px auto;
@@ -94,6 +103,7 @@
             color: #555;
         }
 
+        /* Responsive */
         @media (max-width: 900px) {
             .projects-container {
                 grid-template-columns: 1fr;
@@ -109,6 +119,7 @@
 
 <body>
 
+    <!-- HEADER -->
     <header>
         <div class="logo">Thombits</div>
         <nav>
@@ -121,48 +132,58 @@
         </nav>
     </header>
 
+    <!-- PROJECTS GRID -->
     <div class="projects-container">
 
+        <!-- PROJECT 1 -->
         <div class="project-box">
             <img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif">
             <p>Sample project description 1.</p>
         </div>
 
+        <!-- PROJECT 2 -->
         <div class="project-box">
             <img src="https://media.giphy.com/media/l0HUpt2s9Pclgt9Vm/giphy.gif">
             <p>Sample project description 2.</p>
         </div>
 
+        <!-- PROJECT 3 -->
         <div class="project-box">
             <img src="https://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif">
             <p>Sample project description 3.</p>
         </div>
 
+        <!-- PROJECT 4 -->
         <div class="project-box">
             <img src="https://media.giphy.com/media/3oEduSbSGpGaRX2Vri/giphy.gif">
             <p>Sample project description 4.</p>
         </div>
 
+        <!-- PROJECT 5 -->
         <div class="project-box">
             <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif">
             <p>Sample project description 5.</p>
         </div>
 
+        <!-- PROJECT 6 -->
         <div class="project-box">
             <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif">
             <p>Sample project description 6.</p>
         </div>
 
+        <!-- PROJECT 7 -->
         <div class="project-box">
             <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif">
             <p>Sample project description 7.</p>
         </div>
 
+        <!-- PROJECT 8 -->
         <div class="project-box">
             <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif">
             <p>Sample project description 8.</p>
         </div>
 
+        <!-- PROJECT 9 -->
         <div class="project-box">
             <img src="https://media.giphy.com/media/26BRzozg4TCBXv6QU/giphy.gif">
             <p>Sample project description 9.</p>
