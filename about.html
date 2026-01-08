@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Precious Gem Marmol</title>
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-
     <style>
         body {
             margin: 0;
@@ -15,8 +12,6 @@
             background-color: #ffffff;
             color: #333;
         }
-
-        /* HEADER */
         header {
             display: flex;
             align-items: center;
@@ -25,7 +20,6 @@
             border-bottom: 1px solid #ddd;
             position: relative;
         }
-
         .logo {
             font-size: 30px;
             font-weight: bold;
@@ -33,13 +27,11 @@
             margin-left: 20px;
             color: #B986F0;
         }
-
         nav {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
         }
-
         nav ul {
             list-style: none;
             display: flex;
@@ -47,31 +39,20 @@
             margin: 0;
             padding: 0;
         }
-
         nav ul li a {
             text-decoration: none;
             color: #333;
             font-size: 16px;
-            font-family: "Poppins", sans-serif;
             padding: 5px 10px;
             border-radius: 6px;
             transition: 0.3s;
         }
-
-        nav ul li a:hover {
-            background: linear-gradient(135deg, #ffffff, #f4e9ff);
-            box-shadow: 0 0 10px #B986F0;
-            color: #B986F0;
-        }
-
-        /* ADDED ACTIVE STATE */
+        nav ul li a:hover,
         nav ul li a.active {
             background: linear-gradient(135deg, #ffffff, #f4e9ff);
-            box-shadow: 0 0 10px #B986F0;
             color: #B986F0;
+            box-shadow: 0 0 10px #B986F0;
         }
-
-        /* SECTION STYLING */
         .section {
             display: flex;
             align-items: center;
@@ -79,11 +60,9 @@
             padding: 60px 10%;
             flex-wrap: wrap;
         }
-
         .section-left, .section-right {
             width: 45%;
         }
-
         .section-left h2, .section-right h2 {
             font-family: "Playfair Display", serif;
             font-size: 32px;
@@ -91,52 +70,42 @@
             color: #000000;
             transition: color 0.3s;
         }
-
         .section-left h2:hover,
         .section-right h2:hover {
             color: #B986F0;
             cursor: pointer;
         }
-
         .section-left p, .section-right p {
             font-size: 18px;
             line-height: 1.6;
             color: #555;
         }
-
         .section img {
             width: 100%;
             border-radius: 12px;
             box-shadow: 0 0 10px #d9d9d9;
             transition: transform 0.3s, box-shadow 0.3s;
         }
-
         .section img:hover {
             transform: scale(1.05);
             box-shadow: 0 0 20px #B986F0;
         }
-
         .reverse {
             flex-direction: row;
         }
-
         @media (max-width: 900px) {
             .section-left, .section-right {
                 width: 100%;
                 text-align: center;
                 margin-bottom: 30px;
             }
-
             .reverse {
                 flex-direction: column;
             }
         }
     </style>
 </head>
-
 <body>
-
-    <!-- HEADER -->
     <header>
         <div class="logo">Thombits</div>
         <nav>
@@ -149,27 +118,24 @@
         </nav>
     </header>
 
-    <!-- FIRST SECTION -->
     <section class="section">
         <div class="section-left">
             <h2>Precious Gem Marmol</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ligula id metus venenatis feugiat. Suspendisse potenti.</p>
         </div>
         <div class="section-right">
-            <img src="images/pg.jpeg" alt="Precious Gem M. Marmol">
+            <img src="images/gem.jpeg" alt="Precious Gem Marmol">
         </div>
     </section>
 
-    <!-- SECOND SECTION -->
     <section class="section reverse">
         <div class="section-left">
-            <img src="images/jm.jpg">
+            <img src="images/josie.jpeg" alt="Jocel Myca">
         </div>
         <div class="section-right">
             <h2>Jocel Myca C. Ramos</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt, sapien sit amet bibendum blandit, ligula magna gravida orci, id elementum libero magna at sapien.</p>
         </div>
     </section>
-
 </body>
 </html>

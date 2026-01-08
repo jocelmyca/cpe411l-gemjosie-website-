@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group 2 Portfolio</title>
-
-    <!-- Google Font for nav -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
     <style>
         header {
             display: flex;
@@ -17,8 +14,6 @@
             border-bottom: 1px solid #ddd;
             position: relative;
         }
-
-        /* Logo stays Trebuchet MS */
         .logo {
             font-size: 30px;
             font-weight: bold;
@@ -26,13 +21,11 @@
             margin-left: 20px;
             color: #B986F0;
         }
-
         nav {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
         }
-
         nav ul {
             list-style: none;
             display: flex;
@@ -40,7 +33,6 @@
             margin: 0;
             padding: 0;
         }
-
         nav ul li a {
             text-decoration: none;
             color: #333;
@@ -50,49 +42,33 @@
             border-radius: 6px;
             transition: 0.3s;
         }
-
-        /* Hover effect */
-        nav ul li a:hover {
-            background: linear-gradient(135deg, #ffffff, #f4e9ff);
-            box-shadow: 0 0 10px #B986F0;
-            color: #B986F0;
-        }
-
-        /* ACTIVE PAGE stays highlighted */
+        nav ul li a:hover,
         nav ul li a.active {
             background: linear-gradient(135deg, #ffffff, #f4e9ff);
-            box-shadow: 0 0 10px #B986F0;
             color: #B986F0;
+            box-shadow: 0 0 10px #B986F0;
         }
-
-        /* MAIN SECTION 50/50 LAYOUT */
         .main-container {
             display: flex;
             width: 100%;
             margin-top: 60px;
         }
-
-        /* Left Section (Text) */
         .left-section {
             width: 50%;
             padding: 40px;
         }
-
         .left-section h1 {
             font-size: 45px;
             margin: 0;
             font-family: Trebuchet MS;
             color: #333;
         }
-
         .left-section p {
             font-family: "Poppins", sans-serif;
             font-size: 18px;
             color: #555;
             margin-top: 10px;
         }
-
-        /* Right Section (Images) */
         .right-section {
             width: 50%;
             display: flex;
@@ -100,7 +76,6 @@
             align-items: center;
             padding: 20px;
         }
-
         .right-section img {
             width: 85%;
             border-radius: 12px;
@@ -108,12 +83,9 @@
         }
     </style>
 </head>
-
 <body>
-
     <header>
         <div class="logo">Thombits</div>
-
         <nav>
             <ul>
                 <li><a href="homepage.html" class="active">Homepage</a></li>
@@ -124,22 +96,14 @@
         </nav>
     </header>
 
-    <!-- MAIN 50/50 SPLIT -->
     <div class="main-container">
-
-        <!-- LEFT SIDE -->
         <div class="left-section">
             <h1>Welcome to Our Portfolio</h1>
             <p>This is the homepage of our group website.</p>
         </div>
-
-        <!-- RIGHT SIDE -->
         <div class="right-section">
-            <!-- Replace with your actual image inside your project folder -->
             <img src="images/pussy.jpg" alt="Homepage Image">
         </div>
-
     </div>
-
 </body>
 </html>
