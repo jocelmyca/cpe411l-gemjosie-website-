@@ -3,10 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About Us - Precious Gem Marmol</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #FFFFFF;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Trebuchet MS;
+            margin-left: 20px;
+            color: #B986F0;
+        }
+
+        nav {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            padding: 5px 10px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background: linear-gradient(135deg, #ffffff, #f4e9ff);
+            box-shadow: 0 0 10px #B986F0;
+            color: #B986F0;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 10%;
+            flex-wrap: wrap;
+        }
+
+        .section-left, .section-right {
+            width: 45%;
+        }
+
+        h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #000000;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        h2:hover {
+            color: #B986F0;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .section img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 0 10px #d9d9d9;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .section img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #B986F0;
+        }
+
+        .reverse {
+            flex-direction: row-reverse;
+        }
+
+        @media (max-width: 900px) {
+            .section-left, .section-right {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .reverse {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>About Us</h1>
-    <p>We are Group 2, working on a simple portfolio website for our CPE411 activity.</p>
+
+    <header>
+        <div class="logo">Thombits</div>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Homepage</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <div class="section-left">
+            <h2>Precious Gem Marmol</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ligula id metus venenatis feugiat. Suspendisse potenti.</p>
+        </div>
+        <div class="section-right">
+            <img src="C:\Users\MYRA\Documents\web eng\pg.jpeg" alt="Precious Gem M. Marmol">
+        </div>
+    </section>
+
+    <section class="section reverse">
+        <div class="section-left">
+            <img src="C:\Users\MYRA\Downloads\josie.jpg">
+        </div>
+        <div class="section-right">
+            <h2>Jocel Myca C. Ramos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt, sapien sit amet bibendum blandit, ligula magna gravida orci, id elementum libero magna at sapien.</p>
+        </div>
+    </section>
+
 </body>
 </html>
